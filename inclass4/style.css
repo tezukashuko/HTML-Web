@@ -1,0 +1,21 @@
+.navbar {
+  background: black !important;
+}
+
+
+.banner1 {
+    background: url(images/banner1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 1px 1px 10px white;
+}
+
+.jumbotron {
+    height: 60vh;
+}
+img.img-fluid.img-thumbnail {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}

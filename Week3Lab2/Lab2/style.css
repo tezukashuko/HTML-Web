@@ -1,0 +1,123 @@
+h1,h2,h3,h4, nav ul li{
+
+font-family: 'Roboto Slab', serif;
+}
+
+p, ul li, label,button{
+font-family: 'Noto Sans JP', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    position: fixed;
+    background: rgb(190, 255, 255);
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+.logo{
+    align-content: center;
+}
+header > *{
+    flex-grow: 1;
+    padding: 5px;
+}
+.main-nav nav ul{
+    display: inline-flex;
+    float: right;
+    list-style: none;
+   
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    transition: background 300ms;
+}
+nav ul li a:hover{
+    background: yellow;
+    border-radius: 5px;
+    color:rgb(80, 75, 75);
+}
+
+.banner{
+    background-size: cover;
+    height: 65vh;
+    background: url(images/banner1.jpg);
+
+}
+
+.quote{
+    width:  100%;
+    text-align: center;
+    padding-top: 20vh;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.front-three{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
+
+}
+.wrap-container{
+    margin:auto;
+    width: 95%;
+    
+}
+.col-img{
+    height: 28vh;
+    width: 100%;
+}
+.col-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+button{
+    width: 100%;
+    background: rgb(148, 191, 226)
+    ;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px gray;
+    transition: background 300ms;
+}
+
+button:hover{
+    background: rgb(88, 150, 48);
+    color: red;
+}
+
+input{
+
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    height: 30vh;
+    width: 100%;
+}
+.gallery .item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,41 @@
+
+h1, h2, h3, a{
+    text-decoration: none;
+}
+
+#info{
+
+}
+.gitlogo{
+    display: inline;
+}
+#gitlogo{
+   width: 24px;
+   height: 24px;
+   float: left;
+}
+header{
+    display: flex;
+    justify-content: center ;
+
+    
+}
+#avatar{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+    float: right;
+    background-color: gray 
+    
+}
+body {
+  border: 5px solid;
+  border-color: rgba(139, 139, 139, 0.753);
+  margin: 3% 2% 3% 2%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: lightgray;
+  
+}

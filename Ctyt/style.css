@@ -1,0 +1,30 @@
+
+h1,h2,h3, ul li a{
+    font-family: 'Roboto', sans-serif;
+}
+.card-header {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    text-transform: capitalize;
+    font-size: medium;
+    background-color: #f8f9fa;
+    top: 0px;
+}
+
+
+.card-body {
+    margin-top: 91px;
+}
+
+.jumbotron.jumbotron-fluid {
+    background-image: url(images/wire-brushes-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+}
+
