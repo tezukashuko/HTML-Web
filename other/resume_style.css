@@ -1,34 +1,44 @@
-
-h1, h2, h3, a{
-    text-decoration: none;
+h1,
+h2,
+h3,
+a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  font-family: 'Oswald', sans-serif;
 }
-
-#info{
-
+h4,h5,h5 ul li a, ul li {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 29px;
 }
-.gitlogo{
-    display: inline;
+a{
+    font-size: 24px;
 }
-#gitlogo{
-   width: 24px;
-   height: 24px;
-   float: left;
+.github {
+  align-items: center;
+  display: flex;
+  height: fit-content;
 }
-header{
-    display: flex;
-    justify-content: center ;
-
-    
+.info > *{
+    padding: 15px;
 }
-#avatar{
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-    border-radius: 10px;
-    margin-left: 50px;
-    float: right;
-    background-color: gray 
-    
+#gitlogo {
+  width: 30px;
+  height: 30px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#avatar {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-left: 50px;
+  float: right;
+  background-color: gray;
 }
 body {
   border: 5px solid;
@@ -37,5 +47,34 @@ body {
   border-radius: 20px;
   padding: 10px;
   background-color: lightgray;
-  
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #avatar {
+
+  }
+  .info {
+    order: 2;
+  }
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.skill .col3 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.skill:nth-child(even){
+    background-color: aquamarine;
 }
