@@ -23,7 +23,7 @@ header {
   align-content: space-between;
   flex-direction: row;
   align-items: center;
-  background-color: #b2ebf2;
+  background-color: #ffffff;
   z-index: 2;
 }
 
@@ -36,37 +36,53 @@ header {
 }
 
 #banner {
+  display: grid;
   position: relative;
-  background-image: url(MT.png);
+  background-image: url(winner.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-position-x: 47px;
-  color: white;
+  /* background-position-y: top; */
+  color: #ff3254;
   height: 50vh;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 .quote {
-  position: absolute;
-  width: auto;
-  margin-top: 35px;
-  margin-left: 45px;
+  font-size: 24px;
+  font-weight: 300;
   text-align: center;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  /* background-color: white; */
+  /* top: 85px; */
+  /* left: 100px; */
   /* padding-left: 10px; */
 }
 body {
-  background-color: #b2ebf2;
+  background-color: #ffffff;
+  margin: 0%;
 }
 #main-col {
   position: relative;
   display: flex;
-
-  margin: auto;
+  margin-top:10px;
 }
 .col3 {
-  padding: 10px;
+  margin: 2px;
+  padding: 20px;
   width: 33%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
+.col3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.col3 p{
+  font-size: 20px;
+}
+
 
 .logo > img {
   height: 100%;
@@ -77,41 +93,70 @@ nav {
   display: flex;
   justify-content: flex-end;
   width: 70%;
+  font-size: large;
   margin-right: 30px;
+  transition:  300ms;
+}
+nav ul li a:hover{
+   text-decoration: underline;
+   text-decoration-color: red;
+   text-decoration-thickness: 3px;
 }
 
-ul li a {
+nav a {
   text-decoration: none;
-  margin: 10px;
+  margin: 15px;
 }
 
 @media only screen and (max-width: 650px) {
   header {
     flex-direction: column;
+    height:fit-content;
   }
   .logo {
     width: 100%;
     text-align: center;
-    margin: 10px 0 0 0;
+    height:fit-content;
+    margin: 0px;
+    margin-top: 10px;
   }
   nav {
     justify-content: center;
     width: 100%;
+    height:fit-content;
     margin-right: 40px;
   }
+  nav ul li a{
+    margin: 10px;
+
+  }
   .quote {
-    width: 100%;
-
+    /* width: 100%; */
     margin: 0px;
-
-    margin-top: 24px;
+    font-size: 15px;
+    top:  10%;
+    left: 29%;
+    right: 25%;
+    /* margin-top: -22px; */
+    /* margin-left: 45px; */
   }
   #banner {
-    background-position-x: -198px;
-
-    height: 342px;
-
-    background-position-y: 73px;
+    /* background-position-x: -182px; */
+    /* height: 342px; */
+    /* background-position-y: 126px; */
+    /* background-size: 141%; */
+    padding-top: 59px;
+    height: 30vh;
+    /* background-repeat: no-repeat; */
+  }
+  #main-col{
+    flex-direction: column;
+    
+  }
+  .col3{
+    width:100%;
+    padding:10px;
+    margin:0;
   }
 }
 #banner {
