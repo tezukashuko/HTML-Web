@@ -1,1 +1,0 @@
-chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/userscript.html?name=AdsBypasser.user.js&id=5fcc06b7-8787-4e3e-9f84-29b2089531f0

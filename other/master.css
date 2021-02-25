@@ -7,9 +7,6 @@ nav ul li a {
   font-family: "Fjalla One", sans-serif;
   text-decoration: none;
 }
-header nav ul li a{
-  color: rgb(255, 123, 0);
-}
 p {
   font-family: "Average", sans-serif;
 }
@@ -29,9 +26,7 @@ header {
   background-color: #ffffff;
   z-index: 2;
 }
-header a{
-    ;
-}
+
 .logo {
   /* position: absolute; */
   height: fit-content;
@@ -60,38 +55,34 @@ header a{
   align-self: center;
   justify-self: center;
   width: fit-content;
-
-}
-.quote:hover{
-  -webkit-text-stroke: medium;
-
+  /* background-color: white; */
+  /* top: 85px; */
+  /* left: 100px; */
+  /* padding-left: 10px; */
 }
 body {
   background-color: #ffffff;
   margin: 0%;
-  background-image: url(artworks/the-morning-light-draws-a-shadow-of-the-past.jpg);
 }
 #main-col {
   position: relative;
   display: flex;
-  /* margin-top: 10px; */
+  margin-top:10px;
 }
 .col3 {
-  background-color: whitesmoke;
-  margin: 20px;
+  margin: 2px;
   padding: 20px;
-  border-radius: 10px;
   width: 33%;
-  font-size: x-large;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 .col3:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.col3 p {
+.col3 p{
   font-size: 20px;
 }
+
 
 .logo > img {
   height: 100%;
@@ -104,12 +95,12 @@ nav {
   width: 70%;
   font-size: large;
   margin-right: 30px;
-  transition: 300ms;
+  transition:  300ms;
 }
-nav ul li a:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 3px;
+nav ul li a:hover{
+   text-decoration: underline;
+   text-decoration-color: red;
+   text-decoration-thickness: 3px;
 }
 
 nav a {
@@ -120,29 +111,30 @@ nav a {
 @media only screen and (max-width: 650px) {
   header {
     flex-direction: column;
-    height: fit-content;
+    height:fit-content;
   }
   .logo {
     width: 100%;
     text-align: center;
-    height: fit-content;
+    height:fit-content;
     margin: 0px;
     margin-top: 10px;
   }
   nav {
     justify-content: center;
     width: 100%;
-    height: fit-content;
+    height:fit-content;
     margin-right: 40px;
   }
-  nav ul li a {
+  nav ul li a{
     margin: 10px;
+
   }
   .quote {
     /* width: 100%; */
     margin: 0px;
     font-size: 15px;
-    top: 10%;
+    top:  10%;
     left: 29%;
     right: 25%;
     /* margin-top: -22px; */
@@ -157,18 +149,18 @@ nav a {
     height: 30vh;
     /* background-repeat: no-repeat; */
   }
-  #main-col {
+  #main-col{
     flex-direction: column;
+    
   }
-  .col3 {
-    align-self: center;
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
+  .col3{
+    width:100%;
+    padding:10px;
+    margin:0;
   }
 }
 #banner {
-  margin-top: 75px;
+  margin-top: 81px;
 }
 footer {
   bottom: 0px;
@@ -178,11 +170,10 @@ footer {
   /* overflow: inherit; */
 }
 
+
 #main-col .col3 > h2 {
-  text-align: center;
-  color: red;
+    text-align: center;
+    color: red;
 }
 
-#main-col .col3 > p {
-  text-align: center;
-}
+#main-col .col3 > p {text-align: center;}

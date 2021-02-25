@@ -5,25 +5,22 @@ a {
   text-decoration: none;
   color: black;
   margin: 5px;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
-h4,
-h5,
-h5 ul li a,
-ul li {
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 29px;
+h4,h5,h5 ul li a, ul li {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 29px;
 }
-a {
-  font-size: 24px;
+a{
+    font-size: 24px;
 }
 .github {
   align-items: center;
   display: flex;
   height: fit-content;
 }
-.info > * {
-  padding: 15px;
+.info > *{
+    padding: 15px;
 }
 #gitlogo {
   width: 30px;
@@ -42,11 +39,6 @@ header {
   margin-left: 50px;
   float: right;
   background-color: gray;
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-   transition: 0.3s;
-}
-#avatar:hover{
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
 }
 body {
   border: 5px solid;
@@ -56,38 +48,6 @@ body {
   padding: 10px;
   background-color: lightgray;
 }
-#stylehr {
-  background-color: orange;
-  height: 4px;
-  margin: 0;
-  margin-bottom: 10px;
-  width: 58px;
-}
-.skill {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 15px;
-  /* grid-gap: 1px; */
-}
-
-.skill .col3 h2 {
-  text-align: center;
-  text-decoration: underline;
-}
-
-.skill:nth-child(even) {
-  background-color: aquamarine;
-}
-
-.col3 {
-  border: outset;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-.col3:hover{
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-}
 
 @media screen and (max-width: 700px) {
   header {
@@ -96,13 +56,25 @@ body {
   }
 
   #avatar {
-    margin-left: 0px;
+
   }
   .info {
     order: 2;
   }
-  .skill {
-    grid-template-columns: 1fr;
-    grid-gap: 15px;
-  }
+}
+
+.skill {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.skill .col3 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.skill:nth-child(even){
+    background-color: aquamarine;
 }
