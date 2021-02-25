@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--[CSP PLACEHOLDER]-->
+        <script>
+            (function () {
+                var getP = function (n) {
+                    var h = location.href;
+                    var r = new RegExp( '[?&]' + n + '=([^&#]*)', 'i' );
+                    var s = r.exec(h);
+                    return s ? s[1] : null;
+                };
+                var settings = function() {
+                    s = {};
+                    ['env', 'ver', 'platform'].forEach(function(n) {s[n] = getP(n);});
+                    s.parent = location.hash.replace('#', 'https://');
+                    return s;
+                }
+                var loader = function (src, onload) {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.src = src;
+                    s.onload = onload;
+                    document.head.appendChild(s);
+                }
+                var getBundleURI = function(name, s) {
+                    var prod = s.env === 'prod' || location.host === 'swc.cdn.skype.com';
+                    s.suff = prod ? '.min' : '';
+                    return 'https://' + location.host + '/v/' + s.ver + '/' + name + s.suff + '.js';
+                }
+                var s = settings();
+                window.swc = {
+                    framed: true,
+                    initSettings: s
+                }
+                loader('https://' + location.host + '/vendors/uicomponent-bundle.js', function () {
+                    loader(getBundleURI('services-bundle', s));
+                });
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="main-calling" class="swc" style="display: none;"></div>
+        <div id="main" class="swc main-component" style="display: none;"></div>
+    </body>
+</html>
