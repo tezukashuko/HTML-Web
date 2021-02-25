@@ -1,49 +1,138 @@
-
-h1,h2,h3, ul li a, p{
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 10px 1px 0px black;
+h1,
+h2,
+h3,
+ul li a,
+p {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 10px 1px 0px black;
 }
 .card-header {
-    
-    height: fit-content;
-    width: 100%;
-    align-content: center;
-    
-    text-transform: capitalize;
-    background-color: #f8f9fa;
-   
+  height: fit-content;
+  width: 100%;
+  align-content: center;
+  text-transform: capitalize;
+  background-color: #f8f9fa;
+}
+.navbar-brand img {
+  height: 59px;
 }
 
-
-nav.navbar.navbar-expand-sm.navbar-light.bg-light {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    width: 100%;
-    align-content: center; 
-    justify-content: space-between;
-    position: fixed;
-    background-color: #f8f9fa;
-    
-    
+.card-header {
+  padding: 0px;
 }
-
+.navbar{
+  transition: 0.4s ease-out;
+}
 .card-body {
-    margin-top: 115px;
-    ;
+  margin-top: 100px;
 }
-button.navbar-toggler.d-lg-none {align-self: flex-start;}
+button.navbar-toggler.d-lg-none {
+  align-self: flex-start;
+}
 .jumbotron.jumbotron-fluid {
-    background-image: url(images/wire-brushes-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: white;
-    background-position: center;
+  background-image: url(images/wire-brushes-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  background-position: center;
 }
 
 .jumbotron.jumbotron-fluid .container p {
-    background: white;
-    width: fit-content;
-    border-radius: .3rem;
+  background: rgba(225, 225, 225, 0.4);
+  width: fit-content;
+  border-radius: 0.3rem;
 }
 
+.jumbotron .container > * {
+  padding: 2px;
+}
+.dropdown-menu{
+  transition: 0.3s;
+}
+.dropdown-menu.show {
+  background-color: #f8f9fa;
+}
+#maincarousel {
+  padding: 5px 5px;
+}
+
+.carousel-item img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.carousel-caption {
+  margin-top: 50px !important;
+  background-color: rgba(225, 225, 225, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+.carousel-caption h5 {
+  font-weight: 600;
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card {
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.005);
+  border: 1px solid #cccccc;
+  background-color: white;  
+}
+
+.card > i{
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  transform: scale(2);
+  animation: duration timing-function delay iteration-count direction fill-mode;
+}
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.address > img{
+    width: auto;
+    height: 50px;
+    margin: 10px 0px;
+}
+.card-footer{
+  font-size: small;
+}
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  text-align: left;
+}
+.list li a{
+  text-decoration: none;
+  left: -45px;
+  color: #cccccc;
+}
+.textcenter{
+  text-align: center;
+}
+.partner_item{
+
+}
