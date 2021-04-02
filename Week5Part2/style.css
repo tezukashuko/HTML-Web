@@ -5,7 +5,6 @@
   margin: auto;
 }
 
-
 .gallery {
   position: relative;
   display: grid;
@@ -130,10 +129,24 @@ footer {
       opacity: 0;
       transition: opacity 400ms;
   }
-  .viewer img.active {
-    opacity: 1;
-/*  FINISHED CSS   */
+.viewer img.active {
+  opacity:1;
+}
+  .viewer {
+    background: darkgrey;
+  }
+
+.gallery img {
+    filter: grayscale(1);
+    transform: scale(1);
+    height:auto
+    ;
+    width: 100%;
+    object-fit: cover;
+    transition: filter 300ms, transform 300ms;
+}
 
 .gallery img:hover {
-    opacity: .5;
+    filter: grayscale(0);
+    transform: scale(1.1);
 }

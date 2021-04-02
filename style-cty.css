@@ -19,11 +19,12 @@ p {
 .card-header {
   padding: 0px;
 }
-.navbar{
+.navbar {
   transition: 0.4s ease-out;
 }
 .card-body {
-  margin-top: 7rem;
+  margin-top: 7rem !important;
+  overflow: visible;
 }
 button.navbar-toggler.d-lg-none {
   align-self: flex-start;
@@ -45,7 +46,7 @@ button.navbar-toggler.d-lg-none {
 .jumbotron .container > * {
   padding: 2px;
 }
-.dropdown-menu{
+.dropdown-menu {
   transition: 0.3s;
 }
 .dropdown-menu.show {
@@ -85,36 +86,38 @@ button.navbar-toggler.d-lg-none {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   transform: scale(1.005);
   border: 1px solid #cccccc;
-  background-color: white;  
+  background-color: white;
 }
 
-.card > i{
+.card > i {
   position: absolute;
   bottom: 16px;
   right: 16px;
   transform: scale(2);
   animation: duration timing-function delay iteration-count direction fill-mode;
 }
-.smart-scroll{
+.smart-scroll {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1030;
 }
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
-.scrolled-up{
-   transform:translateY(0); transition: all 0.3s ease-in-out;
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
 
-.address > img{
-    width: auto;
-    height: 50px;
-    margin: 10px 0px;
+.address > img {
+  width: auto;
+  height: 50px;
+  margin: 10px 0px;
 }
-.card-footer{
+.card-footer {
   font-size: small;
 }
 .list {
@@ -124,14 +127,44 @@ button.navbar-toggler.d-lg-none {
   display: inline-block;
   text-align: left;
 }
-.list li a{
+.list li a {
   text-decoration: none;
   left: -45px;
   color: #cccccc;
 }
-.textcenter{
+.textcenter {
   text-align: center;
 }
-.partner_item{
+.partner_item {
+}
 
+.icon {
+  width: 30px !important;
+  height: auto !important;
+}
+.lgfont {
+  font-weight: 900;
+}
+.support {
+  position: unset;
+  top: 0px;
+  border: outset;
+  border-radius: 15px;
+  background-color: lightgray;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  height: fit-content;
+}
+.support h2 {
+  text-align: center;
+  font-weight: 600;
+  font-family: Oswald;
+}
+.card > .card-body {
+  margin: 0 !important;
+}
+@media (min-width: 1200px)  {
+  .support {
+    position: sticky;
+    top: 150px;
+  }
 }

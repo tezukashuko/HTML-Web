@@ -15,9 +15,7 @@ $(document).ready(function () {
         hidelightbox();
     });
 
-    $(".lightbox ul").click(function (e) {
-        e.stopPropagation();
-    });
+    
     $(".lightbox img").click(function (e) {
         
         $(this).addClass("active");

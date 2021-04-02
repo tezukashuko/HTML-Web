@@ -1,47 +1,33 @@
-$(document).ready(function () {
-    $(".gallery img").click(function (e) {
-        e.preventDefault();
-        $(".gallery img.active").removeClass("active");
-        $(this).addClass("active");
-        loadimg($(this).attr("src"));
+$(document).ready(function() {
 
-    });
+  $(".gallery img").click(function() {
+    $(".gallery img").removeClass("active");
+    $(this).addClass("active");
+    let src = $(this).attr("src");
+    loadImg(src);
+  });
 
-    $(".next").click(function (e) {
-        let node = $(".gallery img.active");
-        let nodenext = $(".gallery img.active").next();
+  $(".next").click(function() {
+    let currentnode = $(".gallery img.active");
+    let nextnode = currentnode.next();
+    let src = nextnode.attr("src");
+    console.log(src);
+    if(src == null) {
+      nextnode = $(".gallery img").first();
+      src = nextnode.attr("src");
+    }
+    nextnode.addClass("active");
+    currentnode.removeClass("active");
+    loadImg(src);
+  })
 
-        if (nodenext.attr("src") == undefined) {
-            nodenext = $(".gallery img").first().addClass("active");
-
-        }
-        nextimg = nodenext.attr("src");
-        loadimg(nextimg);
-        nodenext.addClass("active");
-        node.removeClass("active");
-    });
-
-    $(".prev").click(function (e) {
-        let node = $(".gallery img.active");
-        let nodenext = $(".gallery img.active").prev();
-
-        if (nodenext.attr("src") == undefined) {
-            nodenext = $(".gallery img").last().addClass("active");
-
-        }
-        nextimg = nodenext.attr("src");
-        loadimg(nextimg);
-        nodenext.addClass("active");
-        node.removeClass("active");
-    });
-});
-
-
-function loadimg(src) {
+  function loadImg(src) {
     $(".viewer img").css("opacity", 0);
-    setTimeout(() => {
-        $(".viewer img").attr("src", src);
-        $(".viewer img").css("opacity", 1);
+    setTimeout(function(){
+      $(".viewer img").css("opacity", 1);
+      $(".viewer img").attr("src", src);
     }, 200);
+  }
 
-}
+
+});
